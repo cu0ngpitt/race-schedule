@@ -1,11 +1,2 @@
 <h1>{{title}}</h1>
-<ul>
-  <li *ngFor="let race of races">
-    <h2>{{race.name}} {{race.entryFee | currency:'USD':'symbol'}}</h2>
-    <p>{{race.date | date:'MMM d, y, h:mm a'}}</p>
-    <p>{{race.about}}</p>
-    <button *ngIf="race.isRacing === false">Enter Race</button>
-    <h3 *ngIf="race.isRacing === true">Already Racing</h3>
-  </li>
-</ul>
-<h2>Total cost: {{totalCost() | currency:'USD':'symbol'}}</h2>
+<app-races></app-races>
