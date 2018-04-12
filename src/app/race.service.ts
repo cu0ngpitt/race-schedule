@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
-import { RACES } from './mock';
 import { Http } from '@angular/http';
-import { Race } from '.race';
+import { Race } from './race';
 import 'rxjs/add/operator/map';
 
 @Injectable()
